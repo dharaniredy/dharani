@@ -1,1 +1,96 @@
-# dharani
+import turtle
+import time
+wn = turtle.Screen()
+wn.title("Traffic Light")
+wn.bgcolor("black")
+
+pen = turtle.Turtle()
+pen.color("yellow")
+pen.width(3)
+pen.hideturtle()
+pen.penup()
+pen.goto(230,60)
+pen.pendown()
+pen.fd(60)
+pen.rt(90)
+pen.fd(120)
+pen.rt(90)
+pen.fd(60)
+pen.rt(90)
+pen.fd(120)
+
+red_light = turtle.Turtle()
+red_light.shape("circle")
+red_light.color("grey")
+red_light.penup()
+red_light.goto(260,40)
+
+yellow_light = turtle.Turtle()
+yellow_light.shape("circle")
+yellow_light.color("grey")
+yellow_light.penup()
+yellow_light.goto(260,0)  
+
+green_light = turtle.Turtle()
+green_light.shape("circle")
+green_light.color("grey")
+green_light.penup()
+green_light.goto(260,-40)
+
+
+pen2 = turtle.Turtle()
+pen2.color("yellow")
+pen2.width(3)
+pen2.hideturtle()
+pen2.penup()
+pen2.goto(-280,260)
+pen2.pendown()
+pen2.fd(60)
+pen2.rt(90)
+pen2.fd(120)
+pen2.rt(90)
+pen2.fd(60)
+pen2.rt(90)
+pen2.fd(120)
+red_ligh = turtle.Turtle()
+red_ligh.shape("circle")
+red_ligh.color("grey")
+red_ligh.penup()
+red_ligh.goto(-250,240)
+
+yellow_ligh = turtle.Turtle()
+yellow_ligh.shape("circle")
+
+#creation by Roll 4
+
+yellow_ligh.color("grey")
+yellow_ligh.penup()
+yellow_ligh.goto(-250,200)  
+
+green_ligh = turtle.Turtle()
+green_ligh.shape("circle")
+green_ligh.color("grey")
+green_ligh.penup()
+green_ligh.goto(-250,160)
+
+while True:
+    red_light.color("red")
+    green_ligh.color("green")
+    time.sleep(20)
+    
+    green_ligh.color("grey")
+    yellow_ligh.color("yellow")
+    time.sleep(2)
+    
+    yellow_ligh.color("grey")
+    red_light.color("grey")
+    red_ligh.color("red")
+    green_light.color("green")
+    time.sleep(18)
+    green_light.color("grey")
+    yellow_light.color("yellow")
+    time.sleep(2)
+    red_ligh.color("grey")
+    yellow_light.color("grey")
+       
+wn.mainloop()
